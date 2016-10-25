@@ -1,0 +1,114 @@
+/*<----------------CSS RESET----------------->*/
+/*<----------------CSS RESET----------------->*/
+/*<----------------CSS RESET----------------->*/
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*<----------------HEADER----------------->*/
+/*<----------------HEADER----------------->*/
+/*<----------------HEADER----------------->*/
+
+    /*<----------------CAROUSEL----------------->*/
+    .carousel_box{
+      width:100%;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .carousel_images li img{
+      width:100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .content li {
+      font-size: 100px;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      list-style: none;
+      text-align: center;
+    }
+
+    .image_1{
+      display:solid;
+    }
+
+    .image_2{
+      display:none;
+    }
+
+    .image_3{
+      display:none;
+    }
+
+    .image_4{
+      display:none;
+    }
+
+    .circle_container{
+      background-color: black;
+      text-align: center;
+    }
+
+    .circle{
+      text-align: center;
+      display:inline-block;
+      width:10px;
+      height:10px;
+      border-radius:10px;
+      border:solid white 2px;
+      background-color:transparent;
+    }
+
+    .circle:hover{
+      background-color: white;
+      transition:.2s;
+    }
