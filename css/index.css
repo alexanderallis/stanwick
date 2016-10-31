@@ -55,14 +55,52 @@ table {
 /*<----------------HEADER----------------->*/
 /*<----------------HEADER----------------->*/
 
+body{
+	width:100%;
+	border:solid thin blue;
+}
+header{
+	width:100%;
+	border: solid thin red;
+}
+
     /*<----------------CAROUSEL----------------->*/
     .carousel_box{
       width:100%;
       overflow: hidden;
-      position: relative;
+			/*border: solid thin green;*/
     }
 
-    .carousel_images li img{
+		.carousel{
+			position: relative;
+			border: solid thin orange;
+			background-color: black;
+		}
+
+		.carousel figure{
+			position: absolute;
+		  top: 0;
+		  width: 100%;
+			border: solid thin green;
+			transition: opacity 1.2s;
+
+		}
+
+		.carousel figure:first-child{
+		  position: relative;
+		}
+
+		.carousel figure img{
+		  /*opacity: 0;*/
+		  transition: opacity 1.2s;
+			width:100%;
+		}
+
+		/*.carousel .show img{
+		  opacity: 1;
+		}*/
+
+    /*.carousel_images li img{
       width:100%;
       margin: 0;
       padding: 0;
@@ -75,9 +113,9 @@ table {
       width: 100%;
       list-style: none;
       text-align: center;
-    }
+    }*/
 
-    .image_1{
+    /*.image_1{
       display:solid;
     }
 
@@ -91,7 +129,7 @@ table {
 
     .image_4{
       display:none;
-    }
+    }*/
 
     .circle_container{
       background-color: black;
