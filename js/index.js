@@ -27,9 +27,14 @@ function showDivs(n) {
     if (n > x.length) {slideIndex = 1}
     if (n < 1) {slideIndex = x.length} ; //if you click the back button when slideIndex=1, it will take you to the end (which is x.length).
     for (i = 0; i < x.length; i++) { //iterate through array
-        x[i].style.display = "none"; //set each to display:none;
+        var theOthers = x[i];
+        x[i].style.opacity = 0; //set each to display:none;
+        // $(theOthers).fadeTo(0,0);
     }
-    x[slideIndex-1].style.display = "block"; //set the "chosen one" (which is the array index - 1) to display:block;
+
+    var theChosenOne = x[slideIndex-1]
+    x[slideIndex-1].style.opacity = 1; //set the "chosen one" (which is the array index - 1) to display:block;
+    // $(theChosenOne).fadeTo(500,1);
 
     var q = document.getElementsByClassName("circle"); //get array of circles
     for(i = 0; i < q.length; i++){ //iterate through circles
@@ -37,8 +42,8 @@ function showDivs(n) {
     }
     q[slideIndex-1].style.backgroundColor = "white"; //set the "chosen one" to white
 
-    slideIndex += 1;
-    setTimeout(showDivs, 2000);
+    // slideIndex += 1;
+    // setTimeout(showDivs, 2000);
 
 }
 
