@@ -36,7 +36,18 @@ function showDivs(n) {
       q[i].style.backgroundColor = "transparent"; //set each background color to transparent
     }
     q[slideIndex-1].style.backgroundColor = "white"; //set the "chosen one" to white
+
+    slideIndex += 1;
+    setTimeout(showDivs, 2000);
+
 }
+
+//-------------------------------TIMER
+
+// function repeat(){
+//   showDivs(slideIndex += 1);
+// }
+// setTimeout(repeat, 2000);
 
 //-------------------------------CAROUSEL-NAVIGATION-CIRCLES
 
