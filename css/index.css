@@ -64,6 +64,11 @@ header{
 	/*border: solid thin red;*/
 }
 
+@font-face {
+    font-family: "Arno Regular";
+    src: url(type/ArnoPro-Regular.otf) format("opentype");
+}
+
     /*<----------------CAROUSEL----------------->*/
 
 		.carousel{
@@ -145,19 +150,24 @@ header{
 			margin-left:3%;
 			width:45%;
 			border:solid thin black;
+			position: relative;
+			padding:9% 0;
+			font-family: "Arno Regular", Georgia, serif;
 		}
 
 		.yellow-plus{
 			width:27px;
-			margin-top:40%;
-			margin-bottom:40%;
-			border:solid thin white;
+			position: absolute;
+			top:46.5%;
+			/*margin-top:20%;
+			margin-bottom:20%;*/
+			/*border:solid thin white;*/
 			display: inline-block;
 		}
 
 		.yellow-left-sub{
-			padding-top:10%;
-			padding-bottom:10%;
+			/*padding-top:10%;*/
+			/*padding-bottom:10%;*/
 			padding-left: 10%;
 			border:solid thin green;
 			display: inline-block;
