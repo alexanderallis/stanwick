@@ -57,19 +57,14 @@ table {
 
 body{
 	width:100%;
-	border:solid thin blue;
+	/*border:solid thin blue;*/
 }
 header{
 	width:100%;
-	border: solid thin red;
+	/*border: solid thin red;*/
 }
 
     /*<----------------CAROUSEL----------------->*/
-    .carousel_box{
-      width:100%;
-      overflow: hidden;
-			/*border: solid thin green;*/
-    }
 
 		.carousel{
 			position: relative;
@@ -88,6 +83,7 @@ header{
 
 		.carousel figure:first-child{
 		  position: relative;
+			z-index:1;
 		}
 
 		.carousel figure img{
@@ -96,57 +92,79 @@ header{
 			width:100%;
 		}
 
-		/*.carousel .show img{
-		  opacity: 1;
-		}*/
-
-    /*.carousel_images li img{
-      width:100%;
-      margin: 0;
-      padding: 0;
-    }
-
-    .content li {
-      font-size: 100px;
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      list-style: none;
-      text-align: center;
-    }*/
-
-    /*.image_1{
-      display:solid;
-    }
-
-    .image_2{
-      display:none;
-    }
-
-    .image_3{
-      display:none;
-    }
-
-    .image_4{
-      display:none;
-    }*/
+		/*<------------------CIRCLE-STYLES----------------->*/
 
     .circle_container{
-      background-color: black;
+      /*background-color: black;*/
       text-align: center;
+			position: relative;
+			top:-50px;
+			z-index: 2;
     }
 
     .circle{
       text-align: center;
       display:inline-block;
-      width:10px;
-      height:10px;
-      border-radius:10px;
+      width:5px;
+      height:5px;
+      border-radius:5px;
       border:solid white 2px;
-      background-color:transparent;
+      background-color:white;
+			margin-left:2px;
+			margin-right:2px;
     }
 
     .circle:hover{
       background-color: white;
       transition:.2s;
     }
+
+		/*<------------------LOGO-SVG----------------->*/
+
+		.logo{
+			width:22%;
+			position: absolute;;
+			top:22%;
+			border:solid thin white;
+			z-index: 2;
+			margin-left:2%;
+		}
+		.logo svg{
+			width:75%;
+			margin-left:5%
+		}
+
+		/*<------------------YELLOW-BAR----------------->*/
+
+		.yellow-bar{
+			background-color: #F8BD14;
+			margin-top: -20px; /*this compensates for the white space left by the absolutely positioned logo*/
+		}
+
+		.yellow-left{
+			margin-left:3%;
+			width:45%;
+			border:solid thin black;
+		}
+
+		.yellow-plus{
+			width:27px;
+			margin-top:40%;
+			margin-bottom:40%;
+			border:solid thin white;
+			display: inline-block;
+		}
+
+		.yellow-left-sub{
+			padding-top:10%;
+			padding-bottom:10%;
+			padding-left: 10%;
+			border:solid thin green;
+			display: inline-block;
+			width:80%;
+		}
+
+		.yellow-bar h1 {
+			color:#F1634D;
+			font-size: 3em;
+		}

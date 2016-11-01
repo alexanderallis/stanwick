@@ -38,16 +38,19 @@ function showDivs(n) {
 
     var q = document.getElementsByClassName("circle"); //get array of circles
     for(i = 0; i < q.length; i++){ //iterate through circles
-      q[i].style.backgroundColor = "transparent"; //set each background color to transparent
+      q[i].style.opacity = .5; //set each background color to transparent
     }
-    q[slideIndex-1].style.backgroundColor = "white"; //set the "chosen one" to white
-
-    // slideIndex += 1;
-    // setTimeout(showDivs, 2000);
+    q[slideIndex-1].style.opacity = 1; //set the "chosen one" to white
 
 }
 
 //-------------------------------TIMER
+
+function timer(){
+  showDivs(slideIndex += 1);
+  setTimeout(timer,10000);
+}
+setTimeout(timer,10000);
 
 // function repeat(){
 //   showDivs(slideIndex += 1);
