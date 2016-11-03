@@ -66,7 +66,8 @@ header{
 
 @font-face {
     font-family: "Arno Regular";
-    src: url(type/ArnoPro-Regular.otf) format("opentype");
+    src: url(../type/ArnoPro-Regular.otf) format("opentype");
+
 }
 
     /*<----------------CAROUSEL----------------->*/
@@ -130,7 +131,7 @@ header{
 			width:22%;
 			position: absolute;;
 			top:22%;
-			border:solid thin white;
+			/*border:solid thin white;*/
 			z-index: 2;
 			margin-left:2%;
 		}
@@ -144,6 +145,7 @@ header{
 		.yellow-bar{
 			background-color: #F8BD14;
 			margin-top: -20px; /*this compensates for the white space left by the absolutely positioned logo*/
+			padding: 6% 0%;
 		}
 
 		.yellow-left{
@@ -151,30 +153,107 @@ header{
 			width:45%;
 			border:solid thin black;
 			position: relative;
-			padding:9% 0;
+			padding:4% 0;
 			font-family: "Arno Regular", Georgia, serif;
+			display:inline-block;
+			vertical-align: top; /*change to middle for smaller size screens*/
 		}
 
-		.yellow-plus{
-			width:27px;
-			position: absolute;
-			top:46.5%;
-			/*margin-top:20%;
-			margin-bottom:20%;*/
+		.plus{
+			width:5%;
+			display: inline-block;
+			vertical-align: middle;
+			/*border:solid thin red;*/
+			margin-right:6%;
+		}
+
+		.quote{
+			width:72%;
+			display: inline-block;
+			vertical-align: middle;
 			/*border:solid thin white;*/
-			display: inline-block;
 		}
 
-		.yellow-left-sub{
-			/*padding-top:10%;*/
-			/*padding-bottom:10%;*/
-			padding-left: 10%;
+		.yellow-second-column{
+			display: inline-block;
+			width:25%;
 			border:solid thin green;
-			display: inline-block;
-			width:80%;
+			vertical-align: top; /*change to middle for smaller size screens*/
 		}
 
-		.yellow-bar h1 {
-			color:#F1634D;
-			font-size: 3em;
+		.the-first-bar{
+			width:5px;
+			height:30px;
+			background-color: #F1634D;
+			display:inline-block;
+			margin: 0px 6px;
+			vertical-align: top;
+		}
+
+		.yellow-middle{
+			color:white;
+			font-family: "Helvetica Neue", "Arial", sans-serif;
+			font-size:1.1em;
+			line-height: 1.05;
+			font-weight:400;
+			width:75%;
+			padding-left:3%;
+			padding-top:5px;
+			display:inline-block;
+			/*border:solid thin red;*/
+		}
+
+		/*<--------------PORTFOLIO-ITEMS------------->*/
+
+		.portfolio-items{
+			padding: 0% 2.3%;
+			width:95.7%;
+			/*border:solid thin red;*/
+		}
+
+		.port-sub{
+			width:100%;
+			/*border:solid thin green;*/
+		}
+
+		.port-col{
+			width:23.9875%;
+			margin-right:1.35%;
+			height:900px;
+			/*border:solid thin grey;*/
+			display: inline-block;
+			vertical-align: top;
+			/*background-color: lightgrey;*/
+		}
+
+		.port-4{
+			margin-right:0;
+		}
+
+		.port-interior{
+			margin-bottom:8px;
+		}
+
+		.port-interior img{
+			width: 100%;
+		}
+
+		.port-interior-caption{
+			padding: 24px 0px;
+			margin-bottom:15px;
+			/*border-bottom:solid thin red;*/
+		}
+
+		.port-interior-title{
+			font-size:1.6em;
+			font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+			color: #323A3D;
+		}
+
+		.port-interor-subtitle{
+			font-size:1em;
+			font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+			color:#99B4BD;
+			margin-top:6px;
+			/*border:solid thin red;*/
 		}
