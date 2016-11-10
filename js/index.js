@@ -76,38 +76,23 @@ function currentSlide(v){
   console.log(v);
 }
 
-//-------------------------------------------->MENU-BUTTON
-
-
-$( ".modal-dark" ).click(function() {
-
-  var div = document.getElementById('menu_button'),
-      deg = rotated ? 0 : 90;
-
-  div.style.webkitTransform = 'rotate('+deg+'deg)';
-  div.style.mozTransform    = 'rotate('+deg+'deg)';
-  div.style.msTransform     = 'rotate('+deg+'deg)';
-  div.style.oTransform      = 'rotate('+deg+'deg)';
-  div.style.transform       = 'rotate('+deg+'deg)';
-
-  rotated = !rotated;
-});
-
 //-------------------------------------------->ROTATE-MENU-BUTTON
 
 var rotated = false;
+var moved = false;
+var darkened = false;
 var dark = document.getElementById('modal_dark');
 
-    // dark.style.opacity = 0;
+//CLICK-ON-BUTTON
+document.getElementById('menu_button_svg').onclick = function() {
 
-// var opa = 0;
-
-document.getElementById('menu_button').onclick = function() {
-
-    //USING-CSS-ROTATE-MENU-BUTTON
-
-    var menu = document.getElementById('menu_button'),
-        deg = rotated ? 0 : 90;
+    //USING-CSS-ROTATE-AND-SLIDE-MENU-BUTTON
+    var menuBar = document.getElementById('menu_bar');
+    var menuButton = document.getElementById('menu_button');
+    var menu = document.getElementById('menu_button_svg');
+    var deg = rotated ? 0 : 90;
+    var mov = moved ? 0 : 25.2;
+    var movMenu = moved ? 0 : 100;
 
     menu.style.webkitTransform = 'rotate('+deg+'deg)';
     menu.style.mozTransform    = 'rotate('+deg+'deg)';
@@ -115,70 +100,68 @@ document.getElementById('menu_button').onclick = function() {
     menu.style.oTransform      = 'rotate('+deg+'deg)';
     menu.style.transform       = 'rotate('+deg+'deg)';
 
-    rotated = !rotated;
+    menuButton.style.webkittransform = 'translate('+mov+'%, 0)';
+    menuButton.style.moztransform = 'translate('+mov+'%, 0)';
+    menuButton.style.mstransform = 'translate('+mov+'%, 0)';
+    menuButton.style.otransform = 'translate('+mov+'%, 0)';
+    menuButton.style.transform = 'translate('+mov+'%, 0)';
 
-    //DARKEN-BACKGROUND
+    menuBar.style.webkittransform = 'translate('+movMenu+'%, 0)';
+    menuBar.style.moztransform = 'translate('+movMenu+'%, 0)';
+    menuBar.style.mstransform = 'translate('+movMenu+'%, 0)';
+    menuBar.style.otransform = 'translate('+movMenu+'%, 0)';
+    menuBar.style.transform = 'translate('+movMenu+'%, 0)';
 
+    // DARKEN-BACKGROUND
     var dark = $('#modal_dark');
+    if(rotated){
+    $(dark).toggleClass('modal-show', false);
+    }else{
+      $(dark).toggleClass('modal-show', true);
+    }
 
-      // register is not visible lets make it visible.
-      if(dark.css('opacity') === '0')
-      {
-        dark.css({
-          'z-index': '10',
-          'opacity': '1',
-        });
-      }
-      else //We know the opacity is not 0 lets make it 0.
-      {
-        dark.css({
-          'z-index': '-10',
-          'opacity': '0',
-        });
-      }
+    rotated = !rotated;
+    moved = !moved;
 
-}
-
-document.getElementById('modal_dark').onclick = function() {
-  var dark = $('#modal_dark');
-
-  if(dark.css('opacity') === '0')
-  {
-    dark.css({
-      'z-index': '10',
-      'opacity': '1',
-    });
   }
-  else //We know the opacity is not 0 lets make it 0.
-  {
-    dark.css({
-      'z-index': '-10',
-      'opacity': '0',
-    });
+
+//CLICK-ON-DARK-BACKGROUND
+  document.getElementById('modal_dark').onclick = function() {
+
+    //DO-THE-SAME-THING-AS-ABOVE
+    var menuBar = document.getElementById('menu_bar');
+    var menuButton = document.getElementById('menu_button');
+    var menu = document.getElementById('menu_button_svg');
+    var deg = rotated ? 0 : 90;
+    var mov = moved ? 0 : 340;
+
+    menu.style.webkitTransform = 'rotate('+deg+'deg)';
+    menu.style.mozTransform    = 'rotate('+deg+'deg)';
+    menu.style.msTransform     = 'rotate('+deg+'deg)';
+    menu.style.oTransform      = 'rotate('+deg+'deg)';
+    menu.style.transform       = 'rotate('+deg+'deg)';
+
+    menuButton.style.webkittransform = 'translate('+mov+'px, 0)';
+    menuButton.style.moztransform = 'translate('+mov+'px, 0)';
+    menuButton.style.mstransform = 'translate('+mov+'px, 0)';
+    menuButton.style.otransform = 'translate('+mov+'px, 0)';
+    menuButton.style.transform = 'translate('+mov+'px, 0)';
+
+    menuBar.style.webkittransform = 'translate('+mov+'px, 0)';
+    menuBar.style.moztransform = 'translate('+mov+'px, 0)';
+    menuBar.style.mstransform = 'translate('+mov+'px, 0)';
+    menuBar.style.otransform = 'translate('+mov+'px, 0)';
+    menuBar.style.transform = 'translate('+mov+'px, 0)';
+
+    // DARKEN-BACKGROUND
+    var dark = $('#modal_dark');
+    if(rotated){
+    $(dark).toggleClass('modal-show', false);
+    }else{
+      $(dark).toggleClass('modal-show', true);
+    }
+
+    rotated = !rotated;
+    moved = !moved;
+
   }
-}
-
-//-------------------------------------------->SLIDE-MENU
-
-// var slide = false;
-//
-// document.getElementById('menu_button').onclick = function() {
-//     var div = document.getElementById('menu_button'),
-//         deg = slide ? 0 : 90;
-//
-//     div.style.webkitTransform = 'rotate('+deg+'deg)';
-//     div.style.mozTransform    = 'rotate('+deg+'deg)';
-//     div.style.msTransform     = 'rotate('+deg+'deg)';
-//     div.style.oTransform      = 'rotate('+deg+'deg)';
-//     div.style.transform       = 'rotate('+deg+'deg)';
-//
-//     rotated = !rotated;
-// }
-
-
-
-// $(".menu-button").click(
-//   toggleDark(){
-//     document.getElementById("modal_dark").classList.toggle("modal-on");
-//   };
-// );

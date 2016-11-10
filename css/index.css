@@ -51,6 +51,20 @@ table {
 	border-spacing: 0;
 }
 
+a{
+	text-decoration: none;
+}
+
+a:visited{
+	text-decoration: none;
+	color:inherit;
+}
+
+a:active{
+	text-decoration: none;
+	color:inherit;
+}
+
 /*<----------------HEADER----------------->*/
 /*<----------------HEADER----------------->*/
 /*<----------------HEADER----------------->*/
@@ -82,16 +96,89 @@ header{
 			bottom: 0;
 			background: rgba(0,0,0,.6);
 			opacity: 0;
-			transition: .5s
+			z-index: -10;
+			-webkit-transition: all 0.5s ease-in-out;
+			-moz-transition: all 0.5s ease-in-out;
+			-o-transition: all 0.5s ease-in-out;
+			transition: all 0.5s ease-in-out;
 			/*display:none;*/
 		}
 
 		.modal-show{
-			opacity:1;
+			z-index: 10;
+			opacity: 1;
 		}
 
-		.modal-hide{
-			opacity:0
+		.menu-bar{
+			position: fixed;
+			top:0;
+			right:100%;
+			bottom:0;
+			width:25.2%;
+			/*padding-left:2.75%;*/
+			padding-top:7%;
+			z-index:10;
+			background-color: white;
+			-webkit-transition: all 0.5s ease-in-out;
+			-moz-transition: all 0.5s ease-in-out;
+			-o-transition: all 0.5s ease-in-out;
+			transition: all 0.5s ease-in-out;
+		}
+
+		.menu-sub{
+			width:92%;
+			margin-left:8%;
+			/*border:solid thin red;*/
+			overflow: hidden;
+		}
+
+		.menu-logo{
+			width:100%;
+			border-bottom:solid thin black;
+			padding-bottom:12%;
+			padding-left:5%;
+		}
+
+		.menu-logo svg{
+			width:85%;
+		}
+
+		.menu-one{
+			font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+			font-size: 1.05em;
+			color:#808080;
+			padding-top: 10%;
+			padding-bottom: 8%;
+			width:100%;
+		}
+
+		.menu-sub-border-bottom{
+			border-bottom:solid thin black;
+		}
+
+		.menu-projects{
+			margin-bottom:4%;
+		}
+
+		.menu-one a{
+			display: block;
+			margin-left:5%;
+		}
+
+		.inquiries{
+			margin-bottom:4%;
+		}
+
+		.menu-social-media{
+			/*border:solid thin red;*/
+			margin-left:5%;
+		}
+
+		.menu-social-svg{
+			/*border:solid thin blue;*/
+			display: inline-block;
+			width:5%;
+			margin-right:2%;
 		}
 
     /*<----------------CAROUSEL----------------->*/
@@ -159,6 +246,7 @@ header{
 			z-index: 2;
 			margin-left:3%;
 		}
+
 		.logo svg{
 			width:75%;
 			/*margin-left:5%;*/
@@ -166,7 +254,7 @@ header{
 		}
 
 		.menu-button{
-			width:3.75%;
+			width:100%;
 			position: absolute;;
 			top:13%;
 			/*border:solid thin white;*/
@@ -185,7 +273,12 @@ header{
 		}
 
 		.menu-button svg{
+			width:3.75%;
 			margin:0;
+			-webkit-transition: all 0.5s ease-in-out;
+			-moz-transition: all 0.5s ease-in-out;
+			-o-transition: all 0.5s ease-in-out;
+			transition: all 0.5s ease-in-out;
 		}
 
 		.menu-button-rotate{
@@ -193,6 +286,15 @@ header{
     	-webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
     	transform: rotate(90deg);
 		}
+
+		.menu-button-slide{
+    transform: translate(180px, 0);
+    -ms-transform: translate(180px, 0);
+    -moz-transform: translate(180px, 0);
+    -webkit-transform: translate(180px, 0);
+    -o-transform: translate(180px, 0);
+    -webkit-transition-duration: 1s;
+}
 
 		/*<------------------YELLOW-BAR----------------->*/
 
