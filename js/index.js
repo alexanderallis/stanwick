@@ -1,6 +1,8 @@
 
 //-------------------------------------------->CAROUSEL
 
+"use strict";
+
 var slideIndex = 1;
 
 showDivs(slideIndex);
@@ -73,3 +75,110 @@ function currentSlide(v){
   showDivs();
   console.log(v);
 }
+
+//-------------------------------------------->MENU-BUTTON
+
+
+$( ".modal-dark" ).click(function() {
+
+  var div = document.getElementById('menu_button'),
+      deg = rotated ? 0 : 90;
+
+  div.style.webkitTransform = 'rotate('+deg+'deg)';
+  div.style.mozTransform    = 'rotate('+deg+'deg)';
+  div.style.msTransform     = 'rotate('+deg+'deg)';
+  div.style.oTransform      = 'rotate('+deg+'deg)';
+  div.style.transform       = 'rotate('+deg+'deg)';
+
+  rotated = !rotated;
+});
+
+//-------------------------------------------->ROTATE-MENU-BUTTON
+
+var rotated = false;
+var dark = document.getElementById('modal_dark');
+
+    // dark.style.opacity = 0;
+
+// var opa = 0;
+
+document.getElementById('menu_button').onclick = function() {
+
+    //USING-CSS-ROTATE-MENU-BUTTON
+
+    var menu = document.getElementById('menu_button'),
+        deg = rotated ? 0 : 90;
+
+    menu.style.webkitTransform = 'rotate('+deg+'deg)';
+    menu.style.mozTransform    = 'rotate('+deg+'deg)';
+    menu.style.msTransform     = 'rotate('+deg+'deg)';
+    menu.style.oTransform      = 'rotate('+deg+'deg)';
+    menu.style.transform       = 'rotate('+deg+'deg)';
+
+    rotated = !rotated;
+
+    //DARKEN-BACKGROUND
+
+    var dark = $('#modal_dark');
+
+      // register is not visible lets make it visible.
+      if(dark.css('opacity') === '0')
+      {
+        dark.css({
+          'z-index': '10',
+          'opacity': '1',
+        });
+      }
+      else //We know the opacity is not 0 lets make it 0.
+      {
+        dark.css({
+          'z-index': '-10',
+          'opacity': '0',
+        });
+      }
+
+}
+
+document.getElementById('modal_dark').onclick = function() {
+  var dark = $('#modal_dark');
+
+  if(dark.css('opacity') === '0')
+  {
+    dark.css({
+      'z-index': '10',
+      'opacity': '1',
+    });
+  }
+  else //We know the opacity is not 0 lets make it 0.
+  {
+    dark.css({
+      'z-index': '-10',
+      'opacity': '0',
+    });
+  }
+}
+
+//-------------------------------------------->SLIDE-MENU
+
+// var slide = false;
+//
+// document.getElementById('menu_button').onclick = function() {
+//     var div = document.getElementById('menu_button'),
+//         deg = slide ? 0 : 90;
+//
+//     div.style.webkitTransform = 'rotate('+deg+'deg)';
+//     div.style.mozTransform    = 'rotate('+deg+'deg)';
+//     div.style.msTransform     = 'rotate('+deg+'deg)';
+//     div.style.oTransform      = 'rotate('+deg+'deg)';
+//     div.style.transform       = 'rotate('+deg+'deg)';
+//
+//     rotated = !rotated;
+// }
+
+
+
+// $(".menu-button").click(
+//   toggleDark(){
+//     document.getElementById("modal_dark").classList.toggle("modal-on");
+//   };
+// );
