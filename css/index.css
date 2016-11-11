@@ -72,6 +72,7 @@ a:active{
 body{
 	width:100%;
 	max-width: 2000px;
+	overflow-x: hidden;
 	/*border:solid thin blue;*/
 }
 header{
@@ -245,6 +246,11 @@ header{
 			/*border:solid thin white;*/
 			z-index: 2;
 			margin-left:3%;
+
+			-webkit-transition: all 0.5s ease-in-out;
+			-moz-transition: all 0.5s ease-in-out;
+			-o-transition: all 0.5s ease-in-out;
+			transition: all 0.5s ease-in-out;
 		}
 
 		.logo svg{
@@ -254,10 +260,10 @@ header{
 		}
 
 		.menu-button{
-			width:100%;
+			width:25.2%;
 			position: absolute;;
 			top:13%;
-			/*border:solid thin white;*/
+			border:solid thin white;
 			margin-left:3%;
 			z-index: 11;
 
@@ -273,8 +279,9 @@ header{
 		}
 
 		.menu-button svg{
-			width:3.75%;
+			width:13%;
 			margin:0;
+			/*margin-left:8%;*/
 			-webkit-transition: all 0.5s ease-in-out;
 			-moz-transition: all 0.5s ease-in-out;
 			-o-transition: all 0.5s ease-in-out;
@@ -564,6 +571,26 @@ header{
 
 		@media (max-width: 1200px) {
 
+			/*<------MENU-ITEMS----->*/
+			.menu-button{
+				width:33.25%;
+			}
+
+			.menu-bar{
+				width:33.25%;
+			}
+
+			/*<------MAIN-LOGO----->*/
+
+			.logo{
+				width:25%;
+				position: absolute;;
+				top:25%;
+				border:solid thin white;
+				z-index: 2;
+				margin-left:3%;
+			}
+
 			/*<------YELLOW-ITEMS----->*/
 
 			.column-quote-parent{
@@ -673,6 +700,28 @@ header{
 
 		@media (max-width: 975px) {
 
+			/*<------MENU-ITEMS----->*/
+
+			.menu-button{
+				width:48.7%;
+			}
+
+			.menu-bar{
+				width:48.7%;
+			}
+
+			/*<------MAIN-LOGO----->*/
+
+			.logo{
+				width:35%;
+				position: absolute;;
+				top:25%;
+				border:solid thin white;
+				z-index: 2;
+				margin-left:3%;
+			}
+
+			/*<------YELLOW-ITEMS----->*/
 
 			.column-quote-parent{
 				width:48%;
@@ -766,6 +815,16 @@ header{
 	}
 
 		@media (max-width: 450px) {
+
+			/*<------MENU-ITEMS----->*/
+
+			.menu-button{
+				width:80%;
+			}
+
+			.menu-bar{
+				width:80%;
+			}
 
 			/*<--------------LOGO-SECTION------------->*/
 
