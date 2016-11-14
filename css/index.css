@@ -261,9 +261,10 @@ header{
 
 		.menu-button{
 			width:25.2%;
+			height:0;
 			position: absolute;;
 			top:13%;
-			border:solid thin white;
+			/*border:solid thin white;*/
 			margin-left:3%;
 			z-index: 11;
 
@@ -386,6 +387,11 @@ header{
 			border-top:solid thin grey;*/
 			display: inline-block;
 			vertical-align: top;
+
+			-webkit-transition: all 0.5s ease-in-out;
+			-moz-transition: all 0.5s ease-in-out;
+			-o-transition: all 0.5s ease-in-out;
+			transition: all 0.5s ease-in-out;
 		}
 
 		.column-p{
@@ -760,7 +766,7 @@ header{
 
 			.column-p{
 				display:block;
-				width:100%;
+				width:90%;
 				/*border:solid thin blue;*/
 				margin:0;
 			}

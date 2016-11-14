@@ -83,130 +83,72 @@ var moved = false;
 var darkened = false;
 var dark = document.getElementById('modal_dark');
 
+var menuBar = document.getElementById('menu_bar');
+var menuButton = document.getElementById('menu_button');
+var menu = document.getElementById('menu_button_svg');
+
+function slideMenu(){
+
+  var deg = rotated ? 0 : 90;
+  var mov = moved ? 0 : 100;
+  var movMenu = moved ? 0 : 100;
+
+  menu.style.webkitTransform = 'rotate('+deg+'deg)';
+  menu.style.mozTransform    = 'rotate('+deg+'deg)';
+  menu.style.msTransform     = 'rotate('+deg+'deg)';
+  menu.style.oTransform      = 'rotate('+deg+'deg)';
+  menu.style.transform       = 'rotate('+deg+'deg)';
+
+  menuButton.style.webkittransform = 'translate('+mov+'%, 0)';
+  menuButton.style.moztransform = 'translate('+mov+'%, 0)';
+  menuButton.style.mstransform = 'translate('+mov+'%, 0)';
+  menuButton.style.otransform = 'translate('+mov+'%, 0)';
+  menuButton.style.transform = 'translate('+mov+'%, 0)';
+
+  menuBar.style.webkittransform = 'translate('+movMenu+'%, 0)';
+  menuBar.style.moztransform = 'translate('+movMenu+'%, 0)';
+  menuBar.style.mstransform = 'translate('+movMenu+'%, 0)';
+  menuBar.style.otransform = 'translate('+movMenu+'%, 0)';
+  menuBar.style.transform = 'translate('+movMenu+'%, 0)';
+
+  // DARKEN-BACKGROUND
+  var dark = $('#modal_dark');
+  if(rotated){
+  $(dark).toggleClass('modal-show', false);
+  }else{
+    $(dark).toggleClass('modal-show', true);
+  }
+
+  rotated = !rotated;
+  moved = !moved;
+
+}
+
 //CLICK-ON-BUTTON
 document.getElementById('menu_button_svg').onclick = function() {
-
-    //USING-CSS-ROTATE-AND-SLIDE-MENU-BUTTON
-    var menuBar = document.getElementById('menu_bar');
-    var menuButton = document.getElementById('menu_button');
-    var menu = document.getElementById('menu_button_svg');
-    var deg = rotated ? 0 : 90;
-    // var mov = moved ? 0 : 25.2;
-    var mov = moved ? 0 : 100;
-    var movMenu = moved ? 0 : 100;
-
-    menu.style.webkitTransform = 'rotate('+deg+'deg)';
-    menu.style.mozTransform    = 'rotate('+deg+'deg)';
-    menu.style.msTransform     = 'rotate('+deg+'deg)';
-    menu.style.oTransform      = 'rotate('+deg+'deg)';
-    menu.style.transform       = 'rotate('+deg+'deg)';
-
-    menuButton.style.webkittransform = 'translate('+mov+'%, 0)';
-    menuButton.style.moztransform = 'translate('+mov+'%, 0)';
-    menuButton.style.mstransform = 'translate('+mov+'%, 0)';
-    menuButton.style.otransform = 'translate('+mov+'%, 0)';
-    menuButton.style.transform = 'translate('+mov+'%, 0)';
-
-    menuBar.style.webkittransform = 'translate('+movMenu+'%, 0)';
-    menuBar.style.moztransform = 'translate('+movMenu+'%, 0)';
-    menuBar.style.mstransform = 'translate('+movMenu+'%, 0)';
-    menuBar.style.otransform = 'translate('+movMenu+'%, 0)';
-    menuBar.style.transform = 'translate('+movMenu+'%, 0)';
-
-    // DARKEN-BACKGROUND
-    var dark = $('#modal_dark');
-    if(rotated){
-    $(dark).toggleClass('modal-show', false);
-    }else{
-      $(dark).toggleClass('modal-show', true);
-    }
-
-    rotated = !rotated;
-    moved = !moved;
-
+    slideMenu();
   }
 
-  // document.getElementById('menu_button').onclick = function() {
-  //
-  //   //USING-CSS-ROTATE-AND-SLIDE-MENU-BUTTON
-  //   var menuBar = document.getElementById('menu_bar');
-  //   var menuButton = document.getElementById('menu_button');
-  //   var menu = document.getElementById('menu_button_svg');
-  //   var deg = rotated ? 0 : deg;
-  //   // var mov = moved ? 0 : 25.2;
-  //   var mov = moved ? 0 : mov;
-  //   var movMenu = moved ? 0 : movMenu;
-  //
-  //   menu.style.webkitTransform = 'rotate('+deg+'deg)';
-  //   menu.style.mozTransform    = 'rotate('+deg+'deg)';
-  //   menu.style.msTransform     = 'rotate('+deg+'deg)';
-  //   menu.style.oTransform      = 'rotate('+deg+'deg)';
-  //   menu.style.transform       = 'rotate('+deg+'deg)';
-  //
-  //   menuButton.style.webkittransform = 'translate('+mov+'%, 0)';
-  //   menuButton.style.moztransform = 'translate('+mov+'%, 0)';
-  //   menuButton.style.mstransform = 'translate('+mov+'%, 0)';
-  //   menuButton.style.otransform = 'translate('+mov+'%, 0)';
-  //   menuButton.style.transform = 'translate('+mov+'%, 0)';
-  //
-  //   menuBar.style.webkittransform = 'translate('+movMenu+'%, 0)';
-  //   menuBar.style.moztransform = 'translate('+movMenu+'%, 0)';
-  //   menuBar.style.mstransform = 'translate('+movMenu+'%, 0)';
-  //   menuBar.style.otransform = 'translate('+movMenu+'%, 0)';
-  //   menuBar.style.transform = 'translate('+movMenu+'%, 0)';
-  //
-  //   // DARKEN-BACKGROUND
-  //   var dark = $('#modal_dark');
-  //   if(!rotated){
-  //   $(dark).toggleClass('modal-show', false);
-  //   }else{
-  //     $(dark).toggleClass('modal-show', true);
-  //   }
-  //
-  //   rotated = !rotated;
-  //   moved = !moved;
-  //
-  // }
-
+document.getElementById('menu_button').onclick = function() {
+    if(rotated){
+      // $(dark).toggleClass('modal-show', false);
+    }else{
+      //nothing
+    }
+}
 
 //CLICK-ON-DARK-BACKGROUND
-  document.getElementById('modal_dark').onclick = function() {
+document.getElementById('modal_dark').onclick = function() {
+  slideMenu();
+}
 
-    //DO-THE-SAME-THING-AS-ABOVE
-    var menuBar = document.getElementById('menu_bar');
-    var menuButton = document.getElementById('menu_button');
-    var menu = document.getElementById('menu_button_svg');
-    var deg = rotated ? 0 : 90;
-    var mov = moved ? 0 : 340;
-    var movMenu = moved ? 0 : 100;
+var toTop = document.getElementById('to_top').onclick = function() {
+// window.scrollTo(0,0);
+$("html, body").animate(
+    {scrollTop:'100vh'},
+   900,
+    "swing"
+    )
 
-    menu.style.webkitTransform = 'rotate('+deg+'deg)';
-    menu.style.mozTransform    = 'rotate('+deg+'deg)';
-    menu.style.msTransform     = 'rotate('+deg+'deg)';
-    menu.style.oTransform      = 'rotate('+deg+'deg)';
-    menu.style.transform       = 'rotate('+deg+'deg)';
 
-    menuButton.style.webkittransform = 'translate('+mov+'px, 0)';
-    menuButton.style.moztransform = 'translate('+mov+'px, 0)';
-    menuButton.style.mstransform = 'translate('+mov+'px, 0)';
-    menuButton.style.otransform = 'translate('+mov+'px, 0)';
-    menuButton.style.transform = 'translate('+mov+'px, 0)';
-
-    menuBar.style.webkittransform = 'translate('+movMenu+'px, 0)';
-    menuBar.style.moztransform = 'translate('+movMenu+'px, 0)';
-    menuBar.style.mstransform = 'translate('+movMenu+'px, 0)';
-    menuBar.style.otransform = 'translate('+movMenu+'px, 0)';
-    menuBar.style.transform = 'translate('+movMenu+'px, 0)';
-
-    // DARKEN-BACKGROUND
-    var dark = $('#modal_dark');
-    if(rotated){
-    $(dark).toggleClass('modal-show', false);
-    }else{
-      $(dark).toggleClass('modal-show', true);
-    }
-
-    rotated = !rotated;
-    moved = !moved;
-
-  }
+};
