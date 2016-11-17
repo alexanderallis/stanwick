@@ -99,17 +99,18 @@ function slideMenu(){
   menu.style.oTransform      = 'rotate('+deg+'deg)';
   menu.style.transform       = 'rotate('+deg+'deg)';
 
-  menuButton.style.webkittransform = 'translate('+mov+'%, 0)';
-  menuButton.style.moztransform = 'translate('+mov+'%, 0)';
-  menuButton.style.mstransform = 'translate('+mov+'%, 0)';
-  menuButton.style.otransform = 'translate('+mov+'%, 0)';
-  menuButton.style.transform = 'translate('+mov+'%, 0)';
+  menuButton.style.webkittransform = 'translateX('+mov+'%)';
+  menuButton.style.moztransform = 'translateX('+mov+'%)';
+  menuButton.style.mstransform = 'translateX('+mov+'%)';
+  menuButton.style.otransform = 'translateX('+mov+'%)';
+  menuButton.style.transform = 'translateX('+mov+'%)';
 
-  menuBar.style.webkittransform = 'translate('+movMenu+'%, 0)';
-  menuBar.style.moztransform = 'translate('+movMenu+'%, 0)';
-  menuBar.style.mstransform = 'translate('+movMenu+'%, 0)';
-  menuBar.style.otransform = 'translate('+movMenu+'%, 0)';
-  menuBar.style.transform = 'translate('+movMenu+'%, 0)';
+  // menuBar.style.transform = 'translate3d('+movMenu+'%, 0, 0)'
+  menuBar.style.webkittransform = 'translateX('+movMenu+'%)';
+  menuBar.style.moztransform = 'translateX('+movMenu+'%)';
+  menuBar.style.mstransform = 'translateX('+movMenu+'%)';
+  menuBar.style.otransform = 'translateX('+movMenu+'%)';
+  menuBar.style.transform = 'translateX('+movMenu+'%)';
 
   // DARKEN-BACKGROUND
   var dark = $('#modal_dark');

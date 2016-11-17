@@ -1,90 +1,36 @@
-/*<----------------CSS RESET----------------->*/
-/*<----------------CSS RESET----------------->*/
-/*<----------------CSS RESET----------------->*/
 
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-a{
-	text-decoration: none;
-}
-
-a:visited{
-	text-decoration: none;
-	color:inherit;
-}
-
-a:active{
-	text-decoration: none;
-	color:inherit;
-}
 
 /*<----------------DEVICE-PIXEL-RATIO----------------->*/
 /*<----------------DEVICE-PIXEL-RATIO----------------->*/
 /*<----------------DEVICE-PIXEL-RATIO----------------->*/
 
-@media	only screen and (-webkit-min-device-pixel-ratio: 1.3),
+/*@media	only screen and (-webkit-min-device-pixel-ratio: 1.3),
 	only screen and (-o-min-device-pixel-ratio: 13/10),
-	only screen and (min-resolution: 120dpi)
+	only screen and (min-resolution: 120dpi)*/
 
-/*<----------------HEADER----------------->*/
-/*<----------------HEADER----------------->*/
-/*<----------------HEADER----------------->*/
 
 body{
 	width:100%;
 	max-width: 2000px;
-	overflow-x: hidden;
+	/*overflow-x: hidden;*/
 	/*border:solid thin blue;*/
 }
-header{
+
+.body-container-div{
+	overflow-x: hidden;
 	width:100%;
+}
+
+header{
+	overflow-x: hidden;
+	/*width:100%;*/
+	/*width:100%;*/
+	/*border: solid thin red;*/
+}
+
+.header-container-div{
+	/*width:100%;*/
+	overflow-x: hidden;
 	/*border: solid thin red;*/
 }
 
@@ -101,7 +47,7 @@ header{
 		  position: fixed;
 			top: 0;
 			left: 0;
-			right: 0;
+			width:100%;
 			bottom: 0;
 			background: rgba(0,0,0,.6);
 			opacity: 0;
@@ -111,6 +57,8 @@ header{
 			-o-transition: all 0.5s ease-in-out;
 			transition: all 0.5s ease-in-out;
 			/*display:none;*/
+			backface-visibility: hidden;
+
 		}
 
 		.modal-show{
@@ -134,6 +82,17 @@ header{
 			transition: all 0.5s ease-in-out;
 		}
 
+		.menu-sub-transform{
+			/*position:relative;
+			width:100%;
+			height:inherit;*/
+			/*background-color: white;
+			-webkit-transition: all 0.5s ease-in-out;
+			-moz-transition: all 0.5s ease-in-out;
+			-o-transition: all 0.5s ease-in-out;
+			transition: all 0.5s ease-in-out;*/
+		}
+
 		.menu-sub{
 			width:92%;
 			margin-left:8%;
@@ -142,7 +101,7 @@ header{
 		}
 
 		.menu-logo{
-			width:100%;
+			width:95%;
 			border-bottom:solid thin black;
 			padding-bottom:12%;
 			padding-left:5%;
@@ -270,7 +229,7 @@ header{
 		.menu-button{
 			width:25.2%;
 			height:0;
-			position: absolute;;
+			position: absolute;
 			top:13%;
 			/*border:solid thin white;*/
 			margin-left:3%;
@@ -311,52 +270,6 @@ header{
     -o-transform: translate(180px, 0);
     -webkit-transition-duration: 1s;
 }
-
-		/*<------------------YELLOW-BAR----------------->*/
-
-		/*.yellow-bar{
-			background-color: #F8BD14;
-			margin-top: -20px; this compensates for the white space left by the absolutely positioned logo
-			padding: 6% 1.8%;
-			width:96.5%;
-		}*/
-
-		/*.yellow-sub{
-			border:solid thin red;
-			width:100%;
-		}*/
-
-		/*.yellow-left{
-			width:48.652%;
-			margin-right:.675%;
-			margin-left:.675%;
-			border-bottom:solid thin black;
-			padding:4% 0;
-			display:inline-block;
-			vertical-align: top; change to middle for smaller size screens
-		}*/
-
-		/*.yellow-second-column{
-			display: inline-block;
-			width:23.651%;
-			margin-right:.675%;
-			margin-left:.675%;
-			border-bottom:solid thin green;
-			vertical-align: top; change to middle for smaller size screens
-		}*/
-
-		/*.yellow-middle{
-			color:white;
-			font-family: "Helvetica Neue", "Arial", sans-serif;
-			font-size:1.1em;
-			line-height: 1.05;
-			font-weight:400;
-			width:75%;
-			padding-left:3%;
-			padding-top:5px;
-			display:inline-block;
-			border:solid thin red;
-		}*/
 
 		/*<------------------------------------------>*/
 		/*<--------------PORTFOLIO-ITEMS------------->*/
@@ -442,6 +355,15 @@ header{
 			/*border:solid thin red;*/
 			margin-right:6%;
 			margin-left:3%;
+		}
+
+		.plus-two{
+			width:5%;
+			display:none;
+			/*vertical-align: middle;*/
+			/*border:solid thin red;*/
+			/*margin-right:6%;*/
+			/*margin-left:3%;*/
 		}
 
 		.quote{
@@ -571,408 +493,3 @@ header{
 			padding: 3px 0;
 			/*border:solid thin green;*/
 		}
-
-
-		/*<---------------------------------------->*/
-		/*<---------------------------------------->*/
-		/*<---------------------------------------->*/
-		/*<--------------MEDIA-QUERIES------------->*/
-		/*<---------------------------------------->*/
-		/*<---------------------------------------->*/
-		/*<---------------------------------------->*/
-
-
-
-		@media (max-width: 1200px) {
-
-			/*<------MENU-ITEMS----->*/
-			.menu-button{
-				width:33.25%;
-			}
-
-			.menu-bar{
-				width:33.25%;
-			}
-
-			/*<------MAIN-LOGO----->*/
-
-			.logo{
-				width:25%;
-				position: absolute;;
-				top:25%;
-				/*border:solid thin white;*/
-				z-index: 2;
-				margin-left:3%;
-			}
-
-			/*<------YELLOW-ITEMS----->*/
-
-			.column-quote-parent{
-				width:31.9%;
-				/*border-top:solid thin red;
-				border-bottom:solid thin red;*/
-			}
-
-			.column-paragraphs-parent{
-				/*border-top:solid thin green;
-				border-bottom:solid thin green;*/
-				width:64.82%;
-				/*margin-left:.675%;*/
-			}
-
-			.column-p{
-				/*background-color:lightgrey;*/
-				display:inline-block;
-				vertical-align: top;
-				width:49.05%;
-				margin: 0 .95%;
-			}
-
-			.column-1{
-				display:none;
-			}
-
-			.column-2{
-				margin-left:0;
-				/*background-color: lightgrey;*/
-			}
-
-			.column-3{
-				margin-right:0;
-				/*background-color:lightgrey;*/
-			}
-
-			.plus{
-				width:10%;
-				display: inline-block;
-				/*vertical-align: middle;*/
-				/*border:solid thin red;*/
-				/*margin-right:6%;*/
-				margin-left:0%;
-				margin-bottom:5%;
-			}
-
-			.quote{
-				padding:4% 0;
-				width:100%;
-				margin-top:0%;
-				display: inline-block;
-				vertical-align: middle;
-				/*border:solid thin white;*/
-			}
-
-			.col-quote{
-				width:90%;
-				margin-left:0%;
-				overflow: visible;
-				margin-top: 0%;
-				/*border:solid thin green;*/
-			}
-
-			.the-first-bar{
-				right:5.3%;
-				/*border:solid thin white;*/
-			}
-
-			.container-sub p{
-				width:85%;
-				/*border:solid thin green;*/
-				display:inline-block;
-				vertical-align: top;
-				margin-left:0px;
-			}
-
-
-			.column{
-				width:31.9%;
-				/*border-bottom:solid thin red;*/
-				/*vertical-align: middle;*/
-			}
-
-			/*<--------------FOOTER-SECTION------------->*/
-
-			.footer-col{
-				width:31.9%;
-				/*margin-right:1.35%;*/
-				margin-right:.675%;
-				margin-left:.675%;
-				/*border-top:solid thin green;*/
-				display:inline-block;
-				vertical-align: top;
-			}
-
-			.footer-col-return{
-				display:block;
-				margin-bottom:4%;
-			}
-
-			.return-to-top{
-				/*width:7%;*/
-			}
-
-  }
-
-		@media (max-width: 975px) {
-
-			/*<------MENU-ITEMS----->*/
-
-			.menu-button{
-				width:48.7%;
-				top:10%;
-			}
-
-			.menu-bar{
-				width:48.7%;
-			}
-
-			/*<------MAIN-LOGO----->*/
-
-			.logo{
-				width:35%;
-				position: absolute;;
-				top:20%;
-				/*border:solid thin white;*/
-				z-index: 2;
-				margin-left:3.5%;
-			}
-
-			/*<------YELLOW-ITEMS----->*/
-
-			.column-quote-parent{
-				width:48%;
-				/*border-top:solid thin red;
-				border-bottom:solid thin red;*/
-				vertical-align: middle;
-			}
-
-			.quote{
-				/*padding:4% 0;*/
-				width:80%;
-				/*margin-top:0%;*/
-				/*display: inline-block;*/
-				/*vertical-align: middle;*/
-				/*border:solid thin white;*/
-			}
-
-			.plus{
-				width:7%;
-				/*display: inline-block;*/
-				/*vertical-align: middle;*/
-				/*border:solid thin red;*/
-				/*margin-right:6%;*/
-				/*margin-left:0%;*/
-				margin-bottom:0%;
-			}
-
-			.column-paragraphs-parent{
-				/*border-top:solid thin green;
-				border-bottom:solid thin green;*/
-				width:48%;
-				margin-left:.675%;
-				vertical-align: middle;
-				font-size: .9em;
-			}
-
-			.column-p{
-				display:block;
-				width:90%;
-				/*border:solid thin blue;*/
-				margin:0;
-			}
-
-			.column-paragraphs-parent p {
-				width:100%;
-				/*border:solid thin green;*/
-				margin:0;
-				margin-top:-30px;
-			}
-
-			.the-first-bar{
-				right:4%;
-			}
-
-			.column-1{
-				display:none;
-			}
-
-			.column-2{
-				margin-bottom:5%;
-			}
-
-			.column{
-				width:48%;
-				/*border-bottom:solid thin red;*/
-				/*vertical-align: middle;*/
-			}
-
-			/*<--------------FOOTER-SECTION------------->*/
-
-			.footer-col{
-				width:48%;
-				/*margin-right:1.35%;*/
-				margin-right:.675%;
-				margin-left:.675%;
-				margin-bottom:3%;
-				/*border-top:solid thin green;*/
-				display:inline-block;
-				vertical-align: top;
-			}
-
-			.footer-col-return{
-				display:inline-block;
-				/*width:100%;*/
-			}
-
-			.return-to-top{
-				width:7%;
-			}
-
-	}
-
-		@media (max-width: 660px) {
-
-			/*<------MENU-ITEMS----->*/
-
-			.menu-button{
-				width:80%;
-				top:5%;
-				margin-left:6%;
-			}
-
-			.menu-bar{
-				width:80%;
-			}
-
-			/*<--------------LOGO-SECTION------------->*/
-
-			.logo{
-				width:50%;
-				position: absolute;;
-				top:17%;
-				/*border:solid thin white;*/
-				z-index: 2;
-				margin-left:3.5%;
-			}
-			.logo svg{
-				width:75%;
-				margin-left:5%
-			}
-
-
-
-
-			/*<--------------YELLOW-SECTION------------->*/
-
-			.container{
-				/*padding-top:40px;*/
-			}
-
-			.column-quote-parent{
-				width:95%;
-				margin-left:2.5%;
-				margin-top:2.5%;
-				/*border-top:solid thin red;
-				border-bottom:solid thin red;*/
-			}
-
-			.col-quote{
-				margin:0;
-				margin-bottom:30px;
-			}
-
-			.plus{
-				width:10%;
-				margin-top:5%;
-				margin-bottom:2.5%;
-			}
-
-			.column-paragraphs-parent{
-				/*border-top:solid thin green;
-				border-bottom:solid thin green;*/
-				width:95%;
-				margin-left:2.5%;
-				margin-bottom:3%;
-				font-size: .9em;
-			}
-
-			.column-paragraphs-parent p {
-				width:85%;
-				margin-top:0;
-				margin-left:15%;
-				/*margin-left:-5px; Compensates for the width of the bar*/
-				/*border:solid thin red;*/
-			}
-
-			.column-p{
-				margin:0;
-				margin-bottom:20px;
-				/*border:solid thin white;*/
-			}
-
-			.the-first-bar{
-				position:inherit;
-				left:-8%;
-				display:none;
-				/*border:solid thin white;*/
-			}
-
-			/*<--------------PORTFOLIO-SECTION------------->*/
-
-			.column{
-				width:95%;
-				/*border-bottom:solid thin red;*/
-				margin-right:2.5%;
-				margin-left:2.5%;
-			}
-
-			/*<--------------FOOTER-SECTION------------->*/
-
-			.footer-sub{
-				/*padding: 0% 2.3%;*/
-				width:95%;
-				margin-right:2.5%;
-				margin-left:2.5%;
-				/*border:solid thin red;*/
-			}
-
-			.footer-col{
-				width:23.9875%;
-				/*margin-right:1.35%;*/
-				/*border-top:solid thin green;*/
-				display:inline-block;
-				vertical-align: top;
-			}
-
-			.footer-col{
-				width:48%;
-				display:block;
-				vertical-align: top;
-				margin-bottom:5%;
-			}
-
-			.footer-col-return{
-				display:block;
-				margin-bottom:10%;
-				/*width:100%;*/
-			}
-
-			.return-to-top{
-				width:15%;
-			}
-	}
-
-@media (max-width: 520px) {
-
-	.menu-button{
-		width:80%;
-		top:3%;
-		margin-left:6%;
-	}
-
-	.logo{
-		width:60%;
-		top:10%;
-		margin-left:3%;
-	}
-
-}
