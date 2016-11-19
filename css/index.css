@@ -282,7 +282,8 @@ header{
 		}
 
 		.yellow-bg{
-			background-color: #F8BD14;
+			background-color: #FABE46;
+			/*background-color: hsl(44,92%,97%);*/
 			color:white;
 			font-family: "Helvetica Neue", "Arial", sans-serif;
 			font-size:1.1em;
