@@ -8,10 +8,20 @@
 	only screen and (-o-min-device-pixel-ratio: 13/10),
 	only screen and (min-resolution: 120dpi)*/
 
+	html {
+	  /* This has to be added to html CSS */
+	  overflow-x: hidden;
+	}
+
+	body {
+	  overflow-x: hidden;
+	}
 
 body{
 	width:100%;
 	max-width: 2000px;
+	margin:0 auto;
+	background-color: #efefef;
 	/*overflow-x: hidden;*/
 	/*border:solid thin blue;*/
 }
@@ -19,13 +29,14 @@ body{
 .body-container-div{
 	overflow-x: hidden;
 	width:100%;
+	/*border:solid thin red;*/
 }
 
 header{
 	overflow-x: hidden;
 	/*width:100%;*/
 	/*width:100%;*/
-	/*border: solid thin red;*/
+	/*border: solid thin green;*/
 }
 
 .header-container-div{
@@ -40,7 +51,7 @@ header{
 
 }
 
-		/*<----------------CAROUSEL----------------->*/
+		/*<----------------SIDE-MENU----------------->*/
 
 		.modal-dark{
 		  /*z-index: 10;*/
@@ -226,12 +237,14 @@ header{
 			/*border:solid thin white;*/
 		}
 
+		/*<------------------MENU-BUTTON----------------->*/
+
 		.menu-button{
 			width:25.2%;
 			height:0;
 			position: absolute;
 			top:13%;
-			/*border:solid thin white;*/
+			border:solid thin white;
 			margin-left:3%;
 			z-index: 11;
 
@@ -276,6 +289,7 @@ header{
 		/*<------------------------------------------>*/
 
 		.container{
+			background-color: white;
 			padding: 0% 1.8%;
 			width:96.5%; /*for some reason, if you don't specify width, it becomes 100%*/
 			/*border-bottom:solid thin red;*/
@@ -349,6 +363,7 @@ header{
 			width:74.32%;
 			margin-left:.675%;
 		}
+
 		.plus{
 			width:5%;
 			display: inline-block;

@@ -1,0 +1,45 @@
+@media (min-width: 1700px){
+
+  body{
+    background-color: red;
+  }
+
+  .yellow-bg{
+    font-size:1.45em;
+  }
+
+  .the-first-bar{
+    width:8px;
+    height:40px;
+  }
+
+  .footer-text{
+    font-size: 1.2em;
+  }
+
+  .social-col-svg{
+    width:18px;
+    /*border: solid thin red;*/
+  }
+
+  .social-svg{
+    width:15px;
+    padding: 5px 0;
+    /*border:solid thin green;*/
+  }
+
+  .twitter-svg{
+    margin-bottom:5px;
+  }
+
+  .facebook-svg{
+    width:16px;
+    padding-bottom:5px;
+    /*border:solid thin green;*/
+  }
+
+  .social-text{
+    padding: 3px 0;
+    /*border:solid thin green;*/
+  }
+}
