@@ -19,9 +19,9 @@
 
 body{
 	width:100%;
-	max-width: 2000px;
+	/*max-width: 2000px;*/
 	margin:0 auto;
-	background-color: #efefef;
+	background-color: white;
 	/*overflow-x: hidden;*/
 	/*border:solid thin blue;*/
 }
@@ -244,7 +244,7 @@ header{
 			height:0;
 			position: absolute;
 			top:13%;
-			border:solid thin white;
+			/*border:solid thin white;*/
 			margin-left:3%;
 			z-index: 11;
 
@@ -257,6 +257,10 @@ header{
 			/*margin-bottom: 13%;*/
 			/*margin-left:5%;*/
 			/*border:solid thin white;*/
+		}
+
+		.menu-button-fixed-toggle{
+			position:fixed;
 		}
 
 		.menu-button svg{
@@ -289,10 +293,12 @@ header{
 		/*<------------------------------------------>*/
 
 		.container{
-			background-color: white;
+			/*background-color: white;*/
 			padding: 0% 1.8%;
 			width:96.5%; /*for some reason, if you don't specify width, it becomes 100%*/
 			/*border-bottom:solid thin red;*/
+			max-width:1400px;
+			margin:0 auto;
 		}
 
 		.yellow-bg{
@@ -450,6 +456,8 @@ header{
 		.footer-sub{
 			padding: 0% 2.3%;
 			width:95.7%;
+			max-width:1400px;
+			margin:0 auto;
 			/*border:solid thin red;*/
 		}
 

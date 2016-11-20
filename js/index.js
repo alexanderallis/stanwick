@@ -90,8 +90,9 @@ var menu = document.getElementById('menu_button_svg');
 function slideMenu(){
 
   var deg = rotated ? 0 : 90;
-  var mov = moved ? 0 : 100;
+  var mov = moved ? 0 : 98;
   var movMenu = moved ? 0 : 100;
+  var fixed = moved ? true : false;
 
   menu.style.webkitTransform = 'rotate('+deg+'deg)';
   menu.style.mozTransform    = 'rotate('+deg+'deg)';
@@ -116,8 +117,10 @@ function slideMenu(){
   var dark = $('#modal_dark');
   if(rotated){
   $(dark).toggleClass('modal-show', false);
+  $(menuButton).toggleClass('menu-button-fixed-toggle', false);
   }else{
     $(dark).toggleClass('modal-show', true);
+    $(menuButton).toggleClass('menu-button-fixed-toggle', true);
   }
 
   rotated = !rotated;
