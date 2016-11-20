@@ -57,7 +57,7 @@
 .info{
   display: inline-block;
   vertical-align: middle;
-  border:solid thin orange;
+  /*border:solid thin orange;*/
   width:80%;
 }
 
@@ -73,7 +73,7 @@
   display: inline-block;
   vertical-align: top;
   width:25%;
-  border:solid thin white;
+  /*border:solid thin white;*/
 }
 
 .info-contents-two{
@@ -81,5 +81,5 @@
   display: inline-block;
   vertical-align: top;
   width:60%;
-  border:solid thin white;
+  /*border:solid thin white;*/
 }
