@@ -1,0 +1,85 @@
+/*<----------------JUMBOTRON----------------->*/
+
+.jumbotron{
+  position: static;
+  display: block;
+  width:100%;
+}
+
+.grey-bg{
+  background-color: #323A3D;
+  /*background-color: hsl(44,92%,97%);*/
+  color:white;
+  font-family: "Helvetica Neue", "Arial", sans-serif;
+  font-size:1.1em;
+  line-height: 1.05;
+  font-weight:400;
+  padding: 6% 1.8%;
+  margin-top:-20;
+  /*Must be after the container property because it modifies it's padding for the yellow space*/
+}
+
+.the-first-bar-projects{
+  width:5px;
+  height:30px;
+  background-color: #F8BD14;
+  display:inline-block;
+  vertical-align: top;
+  position: relative;
+  right:8%;
+}
+
+.picture-one{
+  width:98.59%;
+  /*border-bottom:solid thin green;*/
+  margin-left: .675%;
+  margin-right: .675%;
+  /*margin-bottom:1.35%;*/
+}
+
+.picture-one img{
+  width:100%;
+}
+
+.two-part-column{
+  width:48.65%;
+  margin:0 .675%;
+  /*border-bottom:solid thin red;*/
+  display:inline-block;
+  vertical-align: top;
+}
+
+.two-part-column img {
+  width:100%;
+  margin-top: 3%;
+}
+
+.info{
+  display: inline-block;
+  vertical-align: middle;
+  border:solid thin orange;
+  width:80%;
+}
+
+.info svg{
+  width:40%;
+}
+
+.info-contents{
+}
+
+.info-contents-one{
+  color:#99B4BD;
+  display: inline-block;
+  vertical-align: top;
+  width:25%;
+  border:solid thin white;
+}
+
+.info-contents-two{
+  color:white;
+  display: inline-block;
+  vertical-align: top;
+  width:60%;
+  border:solid thin white;
+}

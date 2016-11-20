@@ -355,17 +355,18 @@ header{
 			width:23.651%;
 			margin-right:.675%;
 			margin-left:.675%;
-			/*border-top:solid thin red;
-			border-bottom:solid thin red;*/
+			border-top:solid thin red;
+			border-bottom:solid thin red;
 			display: inline-block;
 			vertical-align: middle;
+			overflow: visible;
 		}
 
 		.column-paragraphs-parent{
 			display:inline-block;
 			vertical-align: middle;
-			/*border-top:solid thin green;
-			border-bottom:solid thin green;*/
+			border-top:solid thin white;
+			border-bottom:solid thin white;
 			width:74.32%;
 			margin-left:.675%;
 		}
@@ -374,7 +375,7 @@ header{
 			width:5%;
 			display: inline-block;
 			vertical-align: middle;
-			/*border:solid thin red;*/
+			border:solid thin red;
 			margin-right:6%;
 			margin-left:3%;
 		}
@@ -392,11 +393,13 @@ header{
 			width:72%;
 			display: inline-block;
 			vertical-align: middle;
+			border:solid thin red;
 		}
 
 		.col-quote{
 			width:193%;
 			overflow: visible;
+			border:solid thin green;
 		}
 
 		.the-first-bar{
