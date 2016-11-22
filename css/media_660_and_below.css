@@ -177,16 +177,16 @@
 }
 
 .picture-one{
-  width:98.59%;
+  width:100%;
   /*border-bottom:solid thin green;*/
-  margin-left: .675%;
-  margin-right: .675%;
+  /*margin-left: .675%;
+  margin-right: .675%;*/
   /*margin-bottom:1.35%;*/
 }
 
   .two-part-column{
-    width:98.59%;
-    margin:0 .675%;
+    width:100%;
+    margin:0;
     /*border-bottom:solid thin red;*/
     display:inline-block;
     vertical-align: top;

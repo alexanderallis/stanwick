@@ -6,15 +6,16 @@
   width:100%;
 }
 
-.grey-bg{
+.grey{
   background-color: #323A3D;
   /*background-color: hsl(44,92%,97%);*/
   color:white;
   font-family: "Helvetica Neue", "Arial", sans-serif;
-  font-size:1.1em;
-  line-height: 1.05;
-  font-weight:400;
-  padding: 6% 1.8%;
+  /*font-size:1em;*/
+  line-height: 1.15;
+  /*font-weight:200;*/
+  padding-top: 6%;
+  padding-bottom: 6%;
   margin-top:-20;
   /*Must be after the container property because it modifies it's padding for the yellow space*/
 }
@@ -30,23 +31,29 @@
 }
 
 .picture-one{
-  width:98.59%;
-  /*border-bottom:solid thin green;*/
-  margin-left: .675%;
-  margin-right: .675%;
+  width:100%;
+  border-bottom:solid thin green;
+  margin:0 auto;
+  /*margin-left: .675%;
+  margin-right: .675%;*/
   /*margin-bottom:1.35%;*/
 }
 
 .picture-one img{
   width:100%;
+  margin:0 auto;
 }
 
 .two-part-column{
-  width:48.65%;
-  margin:0 .675%;
+  width:49.3%;
+  /*margin:0 .675%;*/
   /*border-bottom:solid thin red;*/
   display:inline-block;
   vertical-align: top;
+}
+
+.column-margin-right{
+  margin-right:1.35%;
 }
 
 .two-part-column img {
@@ -57,12 +64,14 @@
 .info{
   display: inline-block;
   vertical-align: middle;
-  /*border:solid thin orange;*/
+  border:solid thin orange;
   width:80%;
 }
 
 .info svg{
-  width:40%;
+  width:60%;
+  margin-bottom:12%;
+  border:solid thin red;
 }
 
 .info-contents{
@@ -73,6 +82,7 @@
   display: inline-block;
   vertical-align: top;
   width:25%;
+  margin-bottom:10px;
   /*border:solid thin white;*/
 }
 
@@ -81,5 +91,6 @@
   display: inline-block;
   vertical-align: top;
   width:60%;
+  margin-bottom:10px;
   /*border:solid thin white;*/
 }

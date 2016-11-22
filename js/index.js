@@ -146,13 +146,13 @@ function currentSlide(v){
 //   slideMenu();
 // }
 //
-// var toTop = document.getElementById('to_top').onclick = function() {
-// // window.scrollTo(0,0);
-// $("html, body").animate(
-//     {scrollTop:'100vh'},
-//    900,
-//     "swing"
-//     )
+var toTop = document.getElementById('to_top').onclick = function() {
+// window.scrollTo(0,0);
+$("html, body").animate(
+    {scrollTop:'100vh'},
+   900,
+    "swing"
+    )
 //
 //
 // };

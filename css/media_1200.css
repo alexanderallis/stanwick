@@ -128,7 +128,35 @@
 /*<--------------PROJECTS-PAGES------------->*/
 
   .picture-one{
-    width:98.4%;
+    width:100%;
   }
+
+  .info{
+    display: inline-block;
+    vertical-align: middle;
+    margin-top:6%;
+    /*border:solid thin orange;*/
+    width:100%;
+  }
+
+  .info svg{
+    width:60%;
+    margin-bottom:6%;
+  }
+
+
+  .info-contents-one{
+    width:35%;
+  }
+
+  .projects-plus{
+    display:none;
+  }
+/*
+  .info-contents-two{
+    width:70%;
+    margin-bottom:10px;
+    border:solid thin white;
+  }*/
 
 }
