@@ -1,4 +1,4 @@
-@media (max-width: 660px) {
+@media (max-width: 768px) {
 
   /*<------MENU-ITEMS----->*/
 
@@ -35,12 +35,12 @@
   /*<--------------LOGO-SECTION------------->*/
 
   .logo{
-    width:50%;
+    width:40%;
     position: absolute;;
-    top:17%;
+    top:18.75%;
     /*border:solid thin white;*/
     z-index: 2;
-    margin-left:3.5%;
+    margin-left:5%;
   }
   .logo svg{
     width:75%;
@@ -51,6 +51,11 @@
 
 
   /*<--------------YELLOW-SECTION------------->*/
+
+  .yellow{
+    padding-top: 0%;
+    padding-bottom: 0%;
+  }
 
   .container{
     padding: 0% 5%;
@@ -100,7 +105,7 @@
     width:95%;
     margin-left:2.5%;
     margin-bottom:10%;
-    font-size: .9em;
+    font-size: 1.5em;
   }
 
   .column-paragraphs-parent p {
@@ -202,9 +207,25 @@ margin-left:6%;
 }
 
 .logo{
-width:60%;
-top:10%;
-margin-left:3%;
+width:40%;
+top:12%;
+margin-left:5%;
+}
+
+.column-paragraphs-parent{
+  font-size: .9em;
+}
+
+}
+
+@media (max-width: 415px) {
+
+.menu-button{
+  top:5%;
+}
+
+.logo{
+top:14%;
 }
 
 }

@@ -328,8 +328,8 @@ header{
 			width:23.651%;
 			margin-right:.675%;
 			margin-left:.675%;
-			border-top:solid thin red;
-			border-bottom:solid thin red;
+			/*border-top:solid thin red;
+			border-bottom:solid thin red;*/
 			display: inline-block;
 			vertical-align: middle;
 			overflow: visible;
@@ -397,7 +397,12 @@ header{
 			width:72%;
 			display: inline-block;
 			vertical-align: middle;
-			border:solid thin red;
+			/*border:solid thin red;*/
+			overflow: visible;
+		}
+
+		.quote svg{
+			width:100%;
 		}
 
 		.col-quote{
@@ -426,7 +431,7 @@ header{
 
 		.port-interior{
 			margin-bottom:8px;
-			border:solid thin red;
+			/*border:solid thin red;*/
 		}
 
 		.port-interior img{

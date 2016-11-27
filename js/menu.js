@@ -69,6 +69,12 @@ document.getElementById('modal_dark').onclick = function() {
   slideMenu();
 }
 
+//CLICK-ON-MENU-PROJECTS-LINK
+document.getElementById('go_to_projects').onclick = function() {
+  slideMenu();
+  console.log("hahaJones");
+}
+
 var toTop = document.getElementById('to_top').onclick = function() {
 // window.scrollTo(0,0);
 $("html, body").animate(

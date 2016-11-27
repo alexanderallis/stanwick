@@ -32,7 +32,7 @@
 
 .picture-one{
   width:100%;
-  border-bottom:solid thin green;
+  /*border-bottom:solid thin green;*/
   margin:0 auto;
   /*margin-left: .675%;
   margin-right: .675%;*/
@@ -64,14 +64,14 @@
 .info{
   display: inline-block;
   vertical-align: middle;
-  border:solid thin orange;
+  /*border:solid thin orange;*/
   width:80%;
 }
 
 .info svg{
   width:60%;
   margin-bottom:12%;
-  border:solid thin red;
+  /*border:solid thin red;*/
 }
 
 .info-contents{

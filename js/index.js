@@ -153,6 +153,7 @@ $("html, body").animate(
    900,
     "swing"
     )
+  };
 //
 //
 // };

@@ -1,5 +1,9 @@
 @media (max-width: 1200px) {
 
+  body{
+    /*max-width: 1000px;*/
+  }
+
   /*<------MENU-ITEMS----->*/
   .menu-button{
     width:33.25%;
