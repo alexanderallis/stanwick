@@ -80,6 +80,17 @@ function currentSlide(v){
 
 document.getElementById('go_to_projects').onclick = function() {
   slideMenu();
+
+  $('html, body').animate({
+         scrollTop: $( $(this).attr('href') ).offset().top
+     }, 500);
+     return false;
+     //The href on the link on the index page can't say
+     //index.html/#anchor, it can only say #anchor, or the
+     //function will return "can find the property 'top'
+     //of undefined." Of course you would need to specify
+     //index.html#anchor on all the other pages becuase
+     //you would need to change that part of the url.
 }
 
 //

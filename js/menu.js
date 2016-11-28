@@ -85,9 +85,9 @@ $('#return_button').click(function(){
     return false;
 });
 
-$('#go_to_projects').click(function(){
-    $('html, body').animate({
-        scrollTop: $( $(this).attr('href') ).offset().top
-    }, 500);
-    return false;
-});
+// $('#go_to_projects').click(function(){
+//     $('html, body').animate({
+//         scrollTop: $( $(this).attr('href') ).offset().top
+//     }, 500);
+//     return false;
+// });
