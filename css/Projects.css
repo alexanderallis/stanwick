@@ -71,6 +71,7 @@
 .info svg{
   width:60%;
   margin-bottom:12%;
+  overflow: visible;
   /*border:solid thin red;*/
 }
 

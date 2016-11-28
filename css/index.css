@@ -403,6 +403,7 @@ header{
 
 		.quote svg{
 			width:100%;
+			overflow:visible;
 		}
 
 		.col-quote{

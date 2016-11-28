@@ -70,18 +70,24 @@ document.getElementById('modal_dark').onclick = function() {
 }
 
 //CLICK-ON-MENU-PROJECTS-LINK
-document.getElementById('go_to_projects').onclick = function() {
-  slideMenu();
-  console.log("hahaJones");
-}
-
-var toTop = document.getElementById('to_top').onclick = function() {
-// window.scrollTo(0,0);
-$("html, body").animate(
-    {scrollTop:'100vh'},
-   900,
-    "swing"
-    )
+// document.getElementById('go_to_projects').onclick = function() {
+//   slideMenu();
+//   console.log("hahaJones");
+// }
 
 
-};
+
+
+$('#return_button').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $(this).attr('href') ).offset().top
+    }, 500);
+    return false;
+});
+
+$('#go_to_projects').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $(this).attr('href') ).offset().top
+    }, 500);
+    return false;
+});

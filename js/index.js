@@ -75,6 +75,13 @@ function currentSlide(v){
   showDivs();
   console.log(v);
 }
+
+//------------------------------->CLOSE-MENU-AFTER-CLICKING-PROJECTS
+
+document.getElementById('go_to_projects').onclick = function() {
+  slideMenu();
+}
+
 //
 // //-------------------------------------------->ROTATE-MENU-BUTTON
 //
@@ -146,14 +153,9 @@ function currentSlide(v){
 //   slideMenu();
 // }
 //
-var toTop = document.getElementById('to_top').onclick = function() {
-// window.scrollTo(0,0);
-$("html, body").animate(
-    {scrollTop:'100vh'},
-   900,
-    "swing"
-    )
-  };
+
+
+
 //
 //
 // };
