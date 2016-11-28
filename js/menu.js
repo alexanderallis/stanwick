@@ -85,6 +85,12 @@ $('#return_button').click(function(){
     return false;
 });
 
+// $('#return_button').click(function(){
+//     $('html, body').animate({
+//         scrollTop: $(100%vh, 500);
+//     return false;
+// });
+
 // $('#go_to_projects').click(function(){
 //     $('html, body').animate({
 //         scrollTop: $( $(this).attr('href') ).offset().top
