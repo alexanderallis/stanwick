@@ -91,7 +91,8 @@
   color:white;
   display: inline-block;
   vertical-align: top;
-  width:60%;
+  padding-left:5%;
+  width:55%;
   margin-bottom:10px;
   /*border:solid thin white;*/
 }

@@ -1,5 +1,4 @@
 
-
 /*<----------------DEVICE-PIXEL-RATIO----------------->*/
 /*<----------------DEVICE-PIXEL-RATIO----------------->*/
 /*<----------------DEVICE-PIXEL-RATIO----------------->*/
@@ -156,8 +155,13 @@ header{
 		.menu-social-svg{
 			/*border:solid thin blue;*/
 			display: inline-block;
+			vertical-align: text-bottom;
 			width:5%;
 			margin-right:2%;
+		}
+
+		.menu-social-svg-fb{
+			width:5.1%;
 		}
 
     /*<----------------CAROUSEL----------------->*/
@@ -330,8 +334,19 @@ header{
 			/*border-top:solid thin red;
 			border-bottom:solid thin red;*/
 			display: inline-block;
-			vertical-align: middle;
+			vertical-align: top;
 			overflow: visible;
+		}
+
+		.column-paragraphs-parent{
+			display:inline-block;
+			vertical-align: top;
+			/*vertical-align: middle;*/
+			/*border-top:solid thin white;
+			border-bottom:solid thin white;*/
+			width:74.32%;
+			margin-left:.675%;
+			padding-top:0;
 		}
 
 		.column{
@@ -359,21 +374,16 @@ header{
 			/*border-bottom:solid thin white;*/
 		}
 
+		.column-p-extrawide{
+			width:42%;
+		}
+
 		.column-1{
 			margin-left:0;
 		}
 
 		.column-3{
 			margin-right:0;
-		}
-
-		.column-paragraphs-parent{
-			display:inline-block;
-			vertical-align: middle;
-			/*border-top:solid thin white;
-			border-bottom:solid thin white;*/
-			width:74.32%;
-			margin-left:.675%;
 		}
 
 		.plus{
@@ -394,13 +404,13 @@ header{
 			/*margin-left:3%;*/
 		}
 
-		.quote{
+		/*.quote{
 			width:72%;
 			display: inline-block;
 			vertical-align: middle;
-			/*border:solid thin red;*/
+			border:solid thin red;
 			overflow: visible;
-		}
+		}*/
 
 		.quote svg{
 			width:100%;
@@ -526,13 +536,10 @@ header{
 			/*border:solid thin green;*/
 		}
 
-		.twitter-svg{
-			margin-bottom:5px;
-		}
-
 		.facebook-svg{
 			width:10px;
 			padding-bottom:5px;
+			padding-top:4px;
 			/*border:solid thin green;*/
 		}
 

@@ -120,6 +120,7 @@
   .column-p{
     margin:0;
     margin-bottom:20px;
+    width:95%;
     /*border:solid thin white;*/
   }
 
@@ -226,6 +227,18 @@ margin-left:5%;
 
 .logo{
 top:14%;
+}
+
+.info-contents-one{
+  /*margin-right: 5px;*/
+  font-size: .9em;
+}
+
+.info-contents-two{
+  font-size:.9em;
+  width:55%;
+  padding-left:5%;
+
 }
 
 }
