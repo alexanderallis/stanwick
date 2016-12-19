@@ -213,7 +213,7 @@
     width:48%;
     /*border-top:solid thin red;
     border-bottom:solid thin red;*/
-    vertical-align: top;
+    vertical-align: middle;
   }
 
   .quote{
@@ -239,24 +239,12 @@
     /*border-top:solid thin green;
     border-bottom:solid thin green;*/
     width:48%;
-    margin-left:.875%; /*Used to be .675 until the second column was dropped*/
-    vertical-align: top;
-    margin-top:3.3%;
+    margin-left:.675%;
+    vertical-align: middle;
     font-size: .9em;
   }
 
-  .middle{
-    vertical-align: middle
-  }
-
   .column-p{
-    display:block;
-    width:50%;
-    /*border:solid thin blue;*/
-    margin:0;
-  }
-
-  .column-p-index{
     display:block;
     width:90%;
     /*border:solid thin blue;*/
