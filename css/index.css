@@ -404,15 +404,17 @@ header{
 			/*margin-left:3%;*/
 		}
 
-		/*.quote{
+		.quote{
 			width:72%;
 			display: inline-block;
 			vertical-align: middle;
-			border:solid thin red;
+			/*border:solid thin red;*/
 			overflow: visible;
-		}*/
+		}
 
 		.quote svg{
+			/*border:solid thin red;*/
+			display:inline-block;
 			width:100%;
 			overflow:visible;
 		}
