@@ -76,7 +76,7 @@ function currentSlide(v){
   console.log(v);
 }
 
-//------------------------------->CLOSE-MENU-AFTER-CLICKING-PROJECTS
+//------------------------------------------->SCROLL-TO-HREF
 
 document.getElementById('go_to_projects').onclick = function() {
   slideMenu();
@@ -91,6 +91,15 @@ document.getElementById('go_to_projects').onclick = function() {
      //of undefined." Of course you would need to specify
      //index.html#anchor on all the other pages becuase
      //you would need to change that part of the url.
+}
+
+document.getElementById('go_to_about_us').onclick = function() {
+  slideMenu();
+
+  $('html, body').animate({
+         scrollTop: $( $(this).attr('href') ).offset().top
+     }, 500);
+     return false;
 }
 
 //
