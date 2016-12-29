@@ -96,3 +96,20 @@
   margin-bottom:10px;
   /*border:solid thin white;*/
 }
+
+.full-width-image{
+  width:100%;
+}
+
+.work-in-progress{
+  width:30px;
+  position:absolute;
+  right:2.5%;
+  top:0;
+  /*border:solid thin green;*/
+  z-index: 1;
+}
+
+.work-in-progress img{
+  width:100%;
+}
