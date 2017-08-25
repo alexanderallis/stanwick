@@ -1,0 +1,117 @@
+body{
+  min-width: 1000px;
+  /*max-width: 1001px;*/
+
+}
+
+.header-image{
+  /*border:solid thin red;*/
+  width:100%;
+  margin-top:-1em;
+}
+
+.header-image-img{
+  width:100%;
+}
+
+.yellow{
+  background-color: #F0644E;
+}
+
+.the-first-bar{
+  background-color: #FABE46;
+}
+
+.section{
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  width:95%;
+  max-width: 1200px;
+  margin:0 auto;
+  margin-bottom:1.5em;
+  background-color: #FABE46;
+
+  /*border:solid thin green;*/
+}
+
+.image-part{
+  width:47%;
+  display: inline-block;
+  vertical-align: top;
+
+  text-align: center;
+  overflow: hidden;
+}
+
+.image-part > img{
+  height: 43em;
+  position: relative; /* allows repositioning */
+  left: 100%; /* move the whole width of the image to the right */
+  margin-left: -200%; /* magic! */
+}
+
+.stanwick-img > img{
+  /*height:50em;*/
+}
+
+.yellow-part{
+  width:53%;
+  display: inline-block;
+  /*border-bottom:solid thin red;*/
+  vertical-align: top;
+}
+
+.name{
+  width:30%;
+  /*border:solid thin red;*/
+  margin-left:7.5%;
+  margin-top:3em;
+}
+
+.name-alt{
+  margin-left:62.5%:
+}
+
+.name-dunham{
+  width:140%;
+}
+
+h1{
+  color:white;
+  font-size:1.15em;
+  margin-top:.5em;
+}
+
+.paragraph-container{
+
+}
+
+.paragraph{
+  margin-top:2em;
+  display: inline-block;
+  vertical-align: top;
+  /*border:solid thin red;*/
+  width:42%;
+  line-height: 1.4em;
+}
+
+.paragraph-two{
+  width:42%;
+  margin-left:3%;
+}
+
+.paragraph:first-child{
+  margin-left:7.5%;
+
+}
+
+.paragraph > p{
+  margin-bottom:1em;
+}
+
+.paragraph > p > a{
+  color:white;
+}
+
+footer{
+  margin-top:-1.5em;
+}
