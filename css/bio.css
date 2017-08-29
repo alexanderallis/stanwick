@@ -1,5 +1,5 @@
 body{
-  min-width: 1000px;
+  /*min-width: 1000px;*/
   /*max-width: 1001px;*/
 
 }
@@ -33,13 +33,39 @@ body{
   /*border:solid thin green;*/
 }
 
+.section-2{
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  width:95%;
+  max-width: 1200px;
+  margin:0 auto;
+  margin-bottom:1.5em;
+  background-color: #FABE46;
+  text-align: right;
+
+  /*border:solid thin green;*/
+}
+
 .image-part{
   width:47%;
   display: inline-block;
   vertical-align: top;
-
   text-align: center;
   overflow: hidden;
+}
+
+.image-part-2{
+  width:47%;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  overflow: hidden;
+}
+
+.image-part-2 > img{
+  height: 43em;
+  position: relative; /* allows repositioning */
+  left: 100%; /* move the whole width of the image to the right */
+  margin-left: -200%; /* magic! */
 }
 
 .image-part > img{
@@ -60,15 +86,36 @@ body{
   vertical-align: top;
 }
 
+.yellow-part-2{
+  width:53%;
+  display: inline-block;
+  /*border:solid thin red;*/
+  vertical-align: top;
+  text-align: right;
+}
+
 .name{
-  width:30%;
+  width:88.5%;
   /*border:solid thin red;*/
   margin-left:7.5%;
   margin-top:3em;
 }
 
-.name-alt{
-  margin-left:62.5%:
+.name > svg{
+  width:50%;
+}
+
+.name-2{
+  width:88.5%;
+  /*border:solid thin red;*/
+  margin-top:3em;
+  float:right;
+  margin-left:auto;
+  margin-right:7.5%;
+}
+
+.name-2 > svg{
+  width:50%;
 }
 
 .name-dunham{
@@ -77,34 +124,55 @@ body{
 
 h1{
   color:white;
-  font-size:1.15em;
+  font-size:1.5em;
   margin-top:.5em;
 }
 
 .paragraph-container{
-
+  /*border:solid thin green;*/
 }
 
 .paragraph{
-  margin-top:2em;
   display: inline-block;
   vertical-align: top;
   /*border:solid thin red;*/
   width:42%;
+  margin-top:2em;
+  line-height: 1.4em;
+}
+
+.paragraph-2{
+  display: inline-block;
+  vertical-align: top;
+  /*border:solid thin red;*/
+  width:42%;
+  margin-top:2em;
+  margin-right:7.5%;
   line-height: 1.4em;
 }
 
 .paragraph-two{
   width:42%;
   margin-left:3%;
+  /*border:solid thin red;*/
+}
+
+.paragraph-two-2{
+  width:42%;
+  margin-right:6%;
+  /*border:solid thin red;*/
 }
 
 .paragraph:first-child{
   margin-left:7.5%;
-
 }
 
+
 .paragraph > p{
+  margin-bottom:1em;
+}
+
+.paragraph-2 > p{
   margin-bottom:1em;
 }
 
@@ -112,6 +180,111 @@ h1{
   color:white;
 }
 
+.paragraph-2 > p > a{
+  color:white;
+}
+
+.small-paragraph{
+  display:none;
+}
+
+
 footer{
   margin-top:-1.5em;
+}
+
+/*@media (max-width: 975px) {*/
+@media (max-width: 1129px) {
+
+  .large-paragraph{
+    display:none;
+  }
+
+  .small-paragraph{
+    display:inline-block;
+  }
+
+  .paragraph-container{
+  /*border:solid thin red;*/
+  }
+
+  .paragraph{
+    width:83.5%;
+  }
+
+  .paragraph-two{
+    margin-left:7.5%;
+    margin-top:1em;
+  }
+
+  .paragraph-2{
+    width:83.5%;
+  }
+
+  .paragraph-two-2{
+    margin-right:7.5%;
+    margin-top:1em;
+  }
+
+
+}
+
+@media (max-width: 725px) {
+
+
+  .image-part{
+    width:100%;
+    height:40%;
+    /*border:solid thin green;*/
+  }
+
+  .image-part > img{
+    height:auto;
+    width:100%;
+    position: relative;
+    top:-2.5em;
+  }
+
+  .yellow-part{
+    width:100%;
+    display: inline-block;
+    /*border-bottom:solid thin red;*/
+    vertical-align: top;
+  }
+
+  .paragraph-two{
+    margin-top:0;
+    margin-bottom:2em;
+  }
+
+  .image-part-2{
+    width:100%;
+    height:40%;
+    /*border:solid thin green;*/
+  }
+
+  .image-part-2 > img{
+    height:auto;
+    width:100%;
+    position: relative;
+    top:-2.5em;
+  }
+
+  .yellow-part-2{
+    width:100%;
+    display: inline-block;
+    /*border-bottom:solid thin red;*/
+    vertical-align: top;
+  }
+
+  .paragraph-2{
+    margin-right:7.5%;
+  }
+
+  .paragraph-two-2{
+    margin-top:0;
+    margin-bottom:2em;
+  }
+
+
 }
